@@ -1,51 +1,51 @@
-#### This file contains tests to evaluate that your bot behaves as expected.
-#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/user-guide/testing-your-assistant/
+#### Este arquivo contém testes para avaliar se o seu bot se comporta conforme o esperado.
+#### Se você quiser saber mais, consulte os documentos: https://rasa.com/docs/rasa/user-guide/testing-your-assistant/
 
-## happy path 1
-* greet: hello there!
+## caminho feliz 1
+* saudar: olá!
   - utter_greet
-* mood_great: amazing
+* mood_great: incrível
   - utter_happy
 
-## happy path 2
-* greet: hello there!
+## caminho feliz 2
+* saudar: olá!
   - utter_greet
-* mood_great: amazing
+* mood_great: incrível
   - utter_happy
-* goodbye: bye-bye!
+* adeus: adeus!
   - utter_goodbye
 
-## sad path 1
-* greet: hello
+## caminho triste 1
+* saudar: olá
   - utter_greet
-* mood_unhappy: not good
+* mood_unhappy: não é bom
   - utter_cheer_up
   - utter_did_that_help
-* affirm: yes
+* afirmar: sim
   - utter_happy
 
-## sad path 2
-* greet: hello
+## caminho triste 2
+* saudar: olá
   - utter_greet
-* mood_unhappy: not good
+* mood_unhappy: não é bom
   - utter_cheer_up
   - utter_did_that_help
-* deny: not really
+* negar: não realmente
   - utter_goodbye
 
-## sad path 3
-* greet: hi
+## caminho triste 3
+* saudar: oi
   - utter_greet
-* mood_unhappy: very terrible
+* mood_unhappy: muito terrível
   - utter_cheer_up
   - utter_did_that_help
-* deny: no
+* negar: não
   - utter_goodbye
 
-## say goodbye
-* goodbye: bye-bye!
+## diga adeus
+* adeus: adeus!
   - utter_goodbye
 
 ## bot challenge
-* bot_challenge: are you a bot?
+* bot_challenge: você é um bot?
   - utter_iamabot
